@@ -1,0 +1,51 @@
+// =========================
+// data/resan.ts (simplified RAW)
+// =========================
+export const resan = {
+  travel: [
+    "enkel med tid för kamratskap och sång",
+    "händelserik med oväntade möten och utmaningar",
+    "strapatsrik med omväxlande väder och svårtillgängliga vägar",
+    "svår och eländig",
+  ],
+  end: [
+    "i skuggan av ett berg",
+    "i skogens mörker",
+    "i myrens gungfly",
+    "vid en svart sjö",
+    "vid foten av en kulle",
+    "vid flodens strand",
+  ],
+  place: [
+    "uråldrig tornruin",
+    "övergiven katakomb",
+    "bortglömd grav",
+    "överväxt by",
+    "förfallen grotta",
+    "dold borgruin",
+    "märkligt formad gård",
+    "förstörd kulle",
+  ],
+  name: [
+    "Barkes Blot",
+    "Kargesten",
+    "Natthål",
+    "Melkas gåva",
+    "Gurges håla",
+    "Stenhands vakt",
+    "Vidergard",
+    "Tjäles klot",
+    "Ekehand",
+    "Herods vatten",
+    "Kils strand",
+    "Feris undergång",
+    "Saars bro",
+    "Björkeholm",
+    "Vissneland",
+    "Bjuras yl",
+    "Kopparport",
+    "Barras dunge",
+    "Askeklyfta",
+    "Stormlä",
+  ],
+};
