@@ -49,6 +49,8 @@ export function QuestCard({
               Uppdrag
             </h1>
 
+            <p className="hidden">{originalText}</p>
+
             <button
               className="mt-8 px-6 py-3 bg-amber-700 text-white rounded-xl shadow hover:bg-amber-800 transition"
               onClick={onRewrite}
