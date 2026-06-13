@@ -35,12 +35,11 @@ Viktiga regler:
 
 - Behåll uppdragets grundidé och spelrelevanta information.
 - Lägg inte till nya handlingstrådar eller hemligheter som förändrar äventyret.
-- Namn på personer, platser och föremål bör ändras för att förbättra känslan, men ska passa svensk fantasy.
+- Gäller uppdraget en bybo måste den få ett namn.
+- Namn på personer, platser och föremål ska ändras för att förbättra variationen, men ska passa svensk fantasy.
 - Minska upprepningar och variera formuleringar.
 - Endast 1-3 meningar per stycke.
-- Kort och koncist.
 - Skriv naturlig svenska.
-- Allt ska få plats på ett A4 när det är utskrivet.
 
 För playerText:
 
@@ -54,7 +53,6 @@ För "gmText":
 
 - Dela upp informationen i flera tydliga stycken.
 - Separera varje stycke med en tom rad.
-
 - Undvik långa textblock.
 
 Returnera ENDAST giltig JSON.
@@ -67,7 +65,7 @@ JSON-strukturen ska vara exakt:
 {
   "title": "Ett passande namn på äventyret",
   "playerText": "Text som kan läsas upp för spelarna utan att avslöja hemligheter.",
-  "gmText": "Text för spelledaren. Dela upp informationen i stycken. Inled varje stycke med två beskrivande meningar innan konkreta detaljer presenteras. Om utmaningar förekommer ska de beskrivas tydligt utan att föreslå lösningar. Fällor behöver inte läggas till om de inte redan passar uppdraget.",
+  "gmText": "Text för spelledaren. Dela upp informationen i stycken. Inled varje stycke med en eller två beskrivande meningar innan konkreta detaljer presenteras. Om utmaningar förekommer ska de beskrivas tydligt utan att föreslå lösningar. Fällor behöver inte läggas till om de inte redan passar uppdraget.",
   "rewards": [
     "Belöning 1",
     "Belöning 2",

@@ -6,11 +6,8 @@ import { generateQuest } from "./lib/generator";
 import { QuestCard } from "./components/QuestCard";
 import { Controls } from "./components/Controls";
 
-function randomRotation() {
-  return Math.random() * 6 - 3; // -3 to +3 degrees
-}
-
 export type RewrittenQuest = {
+  title: string;
   playerText: string;
   gmText: string;
   rewards: string[];
@@ -92,7 +89,7 @@ export default function App() {
     <div className="min-h-screen bg-stone-900">
       <div className="max-w-7xl mx-auto p-6">
         <Controls
-          regenerate={regenerate}
+          onGenerate={regenerate}
           printMode={printMode}
           setPrintMode={setPrintMode}
         />
@@ -105,9 +102,6 @@ export default function App() {
                 rewritten={quest.rewritten}
                 onRewrite={() => handleRewriteQuest(i)}
                 loading={loadingIndex === i}
-                // style={{
-                //   transform: `rotate(${randomRotation()}deg)`,
-                // }}
               />
             ))}
           </div>

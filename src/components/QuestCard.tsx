@@ -2,7 +2,7 @@
 // components/QuestCard.tsx
 // =========================
 import React from "react";
-import { useMemo } from "react";
+import { useState } from "react";
 
 type RewrittenQuest = {
   title: string;
@@ -33,9 +33,9 @@ export function QuestCard({
     "Grenze Gotisch",
     "Averia Serif Libre",
   ];
-  const randomFont = useMemo(() => {
+  const [randomFont] = useState(() => {
     return medievalFonts[Math.floor(Math.random() * medievalFonts.length)];
-  }, [originalText]); // or rewritten?.title
+  });
 
   return (
     <div
@@ -49,17 +49,12 @@ export function QuestCard({
               Uppdrag
             </h1>
 
-            {/* Original generated quest */}
-            <p className="quest-ink whitespace-pre-line text-lg leading-relaxed first-letter:text-5xl first-letter:font-bold first-letter:mr-2 first-letter:float-left">
-              {originalText}
-            </p>
-
             <button
               className="mt-8 px-6 py-3 bg-amber-700 text-white rounded-xl shadow hover:bg-amber-800 transition"
               onClick={onRewrite}
               disabled={loading}
             >
-              {loading ? "Förädlar..." : "Förädla med AI"}
+              {loading ? "Generarar..." : "Generera med AI"}
             </button>
           </>
         ) : (
@@ -107,9 +102,9 @@ export function QuestCard({
       </div>
 
       {/* Wax seal */}
-      <div className="wax-seal absolute z-30 bottom-6 right-6 w-16 h-16 bg-red-900/90 rounded-full shadow-inner flex items-center justify-center text-amber-200 font-bold text-xl border border-red-950">
+      {/* <div className="wax-seal absolute z-30 bottom-6 right-6 w-16 h-16 bg-red-900/90 rounded-full shadow-inner flex items-center justify-center text-amber-200 font-bold text-xl border border-red-950">
         ⚜
-      </div>
+      </div> */}
     </div>
   );
 }

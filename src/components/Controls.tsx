@@ -7,6 +7,8 @@ export function Controls({
   setPrintMode,
 }: {
   onGenerate: () => void;
+  printMode: "player" | "gm";
+  setPrintMode: React.Dispatch<React.SetStateAction<"player" | "gm">>;
 }) {
   return (
     <div className="flex gap-4 justify-center mb-6">

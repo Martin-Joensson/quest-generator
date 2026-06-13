@@ -7,6 +7,7 @@ export const uppdraget = {
     "vid gryningens första solstrålar",
     "runt lägereldens värme",
     "i marknadens vimmel",
+    "på en anslagstavla",
   ],
   delivery: [
     "ett bud från",
@@ -25,6 +26,8 @@ export const uppdraget = {
     "Davanor, en hemlighetsfull alvjägare",
     "Veruna, en maniskt samlande dvärgisk lärd kvinna",
     "Roena av Dalen, en högmodig riddare",
+    "Amos, en katt",
+    "en bybo",
   ],
   goal: [
     "undersöka",

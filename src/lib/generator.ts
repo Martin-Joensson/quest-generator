@@ -9,30 +9,33 @@ const roll = (n: number) => Math.floor(Math.random() * n);
 
 export function generateQuest() {
   const u = {
-    when: uppdraget.when[roll(4)],
-    delivery: uppdraget.delivery[roll(6)],
-    npc: uppdraget.npc[roll(8)],
-    goal: uppdraget.goal[roll(10)],
-    object: uppdraget.object[roll(12)],
-    name: uppdraget.name[roll(20)],
+    when: uppdraget.when[roll(uppdraget.when.length)],
+    delivery: uppdraget.delivery[roll(uppdraget.delivery.length)],
+    npc: uppdraget.npc[roll(uppdraget.npc.length)],
+    goal: uppdraget.goal[roll(uppdraget.goal.length)],
+    object: uppdraget.object[roll(uppdraget.object.length)],
+    name: uppdraget.name[roll(uppdraget.name.length)],
   };
 
   const r = {
-    travel: resan.travel[roll(4)],
-    end: resan.end[roll(6)],
-    adjective: resan.adjective[roll(8)],
-    place: resan.place[roll(10)],
-    surrounded: resan.surrounded[roll(12)],
-    name: resan.name[roll(20)],
+    travel: resan.travel[roll(resan.travel.length)],
+    end: resan.end[roll(resan.end.length)],
+    adjective: resan.adjective[roll(resan.adjective.length)],
+    place: resan.place[roll(resan.place.length)],
+    surrounded: resan.surrounded[roll(resan.surrounded.length)],
+    name: resan.name[roll(resan.name.length)],
   };
 
   const a = {
-    entry: aventyrsplatsen.entry[roll(4)],
-    feature: aventyrsplatsen.feature[roll(6)],
-    monster: aventyrsplatsen.monsters[roll(8)].name,
-    bigmonster: aventyrsplatsen.bigmonster[roll(10)],
-    challenge: aventyrsplatsen.challenge[roll(12)],
-    boss: aventyrsplatsen.boss[roll(20)],
+    entry: aventyrsplatsen.entry[roll(aventyrsplatsen.entry.length)],
+    feature: aventyrsplatsen.feature[roll(aventyrsplatsen.feature.length)],
+    monster:
+      aventyrsplatsen.monsters[roll(aventyrsplatsen.monsters.length)].name,
+    bigmonster:
+      aventyrsplatsen.bigmonster[roll(aventyrsplatsen.bigmonster.length)],
+    challenge:
+      aventyrsplatsen.challenge[roll(aventyrsplatsen.challenge.length)],
+    boss: aventyrsplatsen.boss[roll(aventyrsplatsen.boss.length)],
   };
 
   return {
