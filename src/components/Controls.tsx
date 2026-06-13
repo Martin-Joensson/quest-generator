@@ -1,7 +1,13 @@
 // =========================
 // components/Controls.tsx
 // =========================
-export function Controls({ onGenerate }: { onGenerate: () => void }) {
+export function Controls({
+  onGenerate,
+  printMode,
+  setPrintMode,
+}: {
+  onGenerate: () => void;
+}) {
   return (
     <div className="flex gap-4 justify-center mb-6">
       <button
@@ -16,6 +22,13 @@ export function Controls({ onGenerate }: { onGenerate: () => void }) {
       >
         Skriv ut
       </button>
+      <select
+        value={printMode}
+        onChange={(e) => setPrintMode(e.target.value as "player" | "gm")}
+      >
+        <option value="player">Player version</option>
+        <option value="gm">GM version</option>
+      </select>
     </div>
   );
 }

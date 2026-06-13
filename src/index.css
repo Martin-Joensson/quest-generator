@@ -1,14 +1,68 @@
-@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Manufacturing+Consent&family=UnifrakturCook:wght@700&family=UnifrakturMaguntia&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Manufacturing+Consent&family=UnifrakturCook:wght@700&family=UnifrakturMaguntia&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Uncial+Antiqua&family=MedievalSharp&family=Pirata+One&family=IM+Fell+English:ital@0;1&family=IM+Fell+English+SC&family=Grenze+Gotisch:wght@100..900&family=Averia+Serif+Libre:wght@300;400;700&family=Princess+Sofia&display=swap");
 @import "tailwindcss";
 
-body {
-  font-family: "Cinzel", serif;
+@page {
+  size: A4;
+  margin: 2.5em;
 }
 
-h1,
-.medieval-title {
-  font-family: "UnifrakturMaguntia", serif;
+.uncial {
+  font-family: "Uncial Antiqua", serif;
 }
+
+.medieval {
+  font-family: "MedievalSharp", cursive;
+}
+
+.pirata {
+  font-family: "Pirata One", serif;
+}
+
+.im-fell {
+  font-family: "IM Fell English", serif;
+}
+
+.im-fell-sc {
+  font-family: "IM Fell English SC", serif;
+}
+
+.gotisch {
+  font-family: "Grenze Gotisch", serif;
+}
+
+.averia {
+  font-family: "Averia Serif Libre", serif;
+}
+
+.princess {
+  font-family: "Princess Sofia", cursive;
+}
+
+.avoid-break {
+  page-break-inside: avoid;
+}
+
+body {
+  font-family: "Manufacturing Consent", serif;
+  font-family: "Poppins", serif;
+}
+
+select {
+  background-color: white;
+}
+
+button {
+  cursor: pointer;
+}
+
+/* h1,
+.medieval-title {
+  font-family: "UnifrakturCook", serif;
+}
+h2 {
+  font-family: "Cinzel", serif;
+} */
 
 /* =========================
    INK / TEXT EFFECTS
@@ -22,7 +76,7 @@ h1,
   filter: contrast(1.05);
 }
 
-.quest-ink::first-letter {
+/* h2::first-letter {
   font-family: "UnifrakturMaguntia", serif;
   font-size: 3.5rem;
   float: left;
@@ -31,7 +85,7 @@ h1,
   color: #2b1b12;
   text-shadow: 0 1px 0 #fff3d6;
   text-transform: capitalize;
-}
+} */
 
 /* =========================
    REAL PARCHMENT BASE
@@ -81,13 +135,50 @@ h1,
     background: white;
   }
 
-  button {
+  button,
+  select,
+  .wax-seal {
     display: none;
   }
+
 
   .quest-card {
     box-shadow: none;
     border: none;
+    margin: 0;
+    padding: 0;
+  }
 
+  .page,
+  .page-break {
+    break-after: page;
+  }
+
+  /* default: hide everything GM-related */
+  .gm-only {
+    display: none;
+  }
+
+  /* default: show player stuff */
+  .player-only {
+    display: block;
+  }
+
+  /* if GM mode is active */
+  .print-gm .gm-only {
+    display: block;
+  }
+
+  .print-gm .player-only {
+    display: block; /* or adjust if needed */
+  }
+
+  /* if player-only mode is active */
+  .print-player .gm-only {
+    display: none;
+  }
+
+  .print-player .player-only {
+    display: block;
   }
 }

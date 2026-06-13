@@ -9,12 +9,12 @@ export const uppdraget = {
     "i marknadens vimmel",
   ],
   delivery: [
-    "ett bud",
-    "ett brev",
-    "ett rykte",
-    "skvaller",
-    "ett möte",
-    "ett omen",
+    "ett bud från",
+    "ett brev från",
+    "ett rykte om",
+    "skvaller om",
+    "ett möte med",
+    "ett omen om",
   ],
   npc: [
     "Karvago, en mystisk trollkarl",
