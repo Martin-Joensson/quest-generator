@@ -129,6 +129,10 @@ h2 {
   filter: contrast(1.02);
 }
 
+  /* .gm-only {
+    display: none;
+  } */
+
 /* Print styles */
 @media print {
   body {

@@ -37,6 +37,7 @@ Viktiga regler:
 - Lägg inte till nya handlingstrådar eller hemligheter som förändrar äventyret.
 - Gäller uppdraget en bybo måste den få ett namn.
 - Namn på personer, platser och föremål ska ändras för att förbättra variationen, men ska passa svensk fantasy.
+- Är objektets namn "Namn" så måste den få ett annat namn.
 - Minska upprepningar och variera formuleringar.
 - Endast 1-3 meningar per stycke.
 - Skriv naturlig svenska.
@@ -44,10 +45,10 @@ Viktiga regler:
 För playerText:
 
 - Texten ska vara skriven på ett sådant sett att man skulle kunna hitta den som ett anslag på en anslagstavla i en medeltida stad.
-- Den behöver inte börja med sökes.
-- Texten kan få ha en mer personlig prägel.
+- Den behöver inte börja med sökes eller hör upp.
+- Texten kan presenteras på ett av tre sett, antingen med personlig prägel, eller som att det har blivit dikterat, eller torrt och informativt.
 - Texten får vara skriven i första person såväl som tredje person.
-- Texten kan ha skrivits av någon som inte är så bra på att skriva, inkludera stavfel eller talspråk.
+- Texten kan ha skrivits av någon som inte är så bra på att skriva, inkludera talspråk.
 
 För "gmText":
 
